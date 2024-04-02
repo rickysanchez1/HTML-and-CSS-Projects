@@ -1,0 +1,23 @@
+/* comments */
+body {
+    font-style: italic;
+    text-align: center;
+}
+.Class_A {
+    color: blue;
+}
+
+p {
+color: blue;
+background-color: black;
+font-size: 20px;
+text-align: center;
+}
+
+.header1 {
+    font-size: 16px;
+    background-color: black;
+    color: aliceblue;
+    text-decoration: underline;
+    padding: 20%;
+}

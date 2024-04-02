@@ -1,0 +1,11 @@
+ol {
+    background-color: aqua;
+    color: black;
+    list-style-type: upper-roman;
+}
+
+ul {
+    background-color: blueviolet;
+    color: white;
+    list-style-type: square;
+}
