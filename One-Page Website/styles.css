@@ -7,7 +7,7 @@ span {
   font-size: 30px;
 }
 
-.info1 {
+.navi {
     text-align: right;
     background-color: rgb(88, 180, 88);
     padding: 25px;
@@ -28,7 +28,7 @@ span {
   height: auto;
 }
 
-.info {
+.info2 {
   padding: 15px;
   text-align: center;
 }
