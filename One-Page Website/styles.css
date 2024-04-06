@@ -2,6 +2,11 @@ body {
     background-color: rgb(139, 226, 139);
 }
 
+span {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+}
+
 .info1 {
     text-align: right;
     background-color: rgb(88, 180, 88);
@@ -28,6 +33,6 @@ body {
   text-align: center;
 }
 
-[id="orders"] {
+[id="videos"] {
   clear: both;
 }
