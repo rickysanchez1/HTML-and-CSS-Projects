@@ -1,0 +1,182 @@
+body {
+    background-color: #184352;
+}
+
+h1 {
+    margin-left: 100px;
+    text-shadow: 1px, .5px, 4px, #000000;
+    padding: 25px;
+}
+
+.wrap {
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+
+.menu-container {
+    top: 0;
+    left: 0;
+    /*To the top edge of the screen*/
+    position: absolute;
+    width: 100%;
+    background-color: #184352;
+}
+
+.menu {
+    font: bold 12px/18px sans-serif;
+    text-align: center;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    color: #B3B3B3;
+    display: inline-block;
+    margin-right: -2px;
+    position: relative;
+    padding: 12px 40px;
+    border: 1px solid #9D9FA2;
+    border-radius: 1.5px;
+    background-color: #387593;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background-color: #5EAFDF;
+}
+
+.menu li:hover ul {
+    display: block;
+    opacity: 1;
+    /*While hovered, drop down-menu appears
+    This also avoids a block-level bug*/
+    visibility: visible;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.submenu {
+    padding: 0;
+    left: 0;
+    position: absolute;
+    top: 43.5px;
+    width: 125.5px;
+    opacity: 0;
+    /*While not being hovered, drop down-menu hides
+    This also avoids a block-level bug*/
+    visibility: hidden;
+}
+
+.submenu li {
+    background-color: #387593;
+    display: block;
+    color: #B3B3B3;
+}
+
+.submenu li:hover {
+    color: #fff;
+    background-color: #5EAFDF;
+}
+
+.container {
+    width: 525px;
+    height: 525px;
+    background-color: #faebd7;
+    border: 2px solid black;
+    border-radius: 1%;
+}
+
+/*---------------------------------------------
+SELECT ALL SQUARES IN THE ARRAY
+---------------------------------------------*/
+.container .squares:nth-child(-n+4) {
+    color: #fff;
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 1%;
+    cursor: pointer;
+    transition: transform .5 ease-in-out;
+}
+
+/*---------------------------------------------
+SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY
+---------------------------------------------*/
+
+.squares:nth-child(-n+4) p {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 1px 4px rgba(0,0,0, 0.8);
+}
+
+/*---------------------------------------------
+INDIVIDUALLY SELECT A SQUARE IN THE ARRAY
+---------------------------------------------*/
+.squares:nth-child(1) {
+    background-image: url("../images/ceviche.png");
+}
+
+.squares:nth-child(2) {
+    background-image: url("../images/huebos.png");
+}
+
+.squares:nth-child(3) {
+    background-image: url("../images/tacos.png");
+}
+
+.squares:nth-child(4) {
+    background-image: url("../images/michelada.png");
+}
+
+/*---------------------------------------------
+HOVER, TRANSLATE & TRANSFORM EFFECTS
+---------------------------------------------*/
+.container .squares:nth-child(-n+4):hover {
+    background-image: url("../thumb/icons/icons2.png");
+    transform: scale(.5);
+    animation-name: race;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
+}
+
+.squares:nth-child(1):hover {
+    background: #13b4ff;
+}
+
+.squares:nth-child(2):hover {
+    background: #d861af;
+}
+
+.squares:nth-child(3):hover {
+    background: #81295f;
+}
+
+.squares:nth-child(4):hover {
+    background: #77b800;
+}
+
+/*---------------------------------------------
+ANIMATION EFFECT
+---------------------------------------------*/
+@keyframes race {
+    0%, 100% {
+        transform: translateY(0px);
+        background-image: url("../thumb/icons/icons2.png");
+    }
+    50% {
+        transform: translateY(300px);
+    }
+}
