@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/animations.css"> 
     <title>Delicious cupcakes!</title>
 </head>
+
 <body>
 
     <!-- Nav -->
-    <div>
-        <div>
-            <ul>
-                <a href="#home" id="link"><li>HOME</li></a>
-                <a href="#gallery" id="link"><li>GALLERY</li></a>
-                <a href="#reservations" id="link"><li>RESERVATIONS</li></a>
+    <div class="wrap">
+        <div class="menu-container">
+            <ul class="menu">
+                <a href="#home"><li>HOME</li></a>
+                <a href="#gallery"><li>GALLERY</li></a>
+                <a href="#contact"><li>CONTACT</li></a>
             </ul>
         </div>
     </div>
@@ -21,141 +24,123 @@
 
     <!-- HOME -->
     <div id="home">
-        <div>
-            <div>
-                <span>Ordering Delicious Cupcakes!</span>
+        <div class="container">
+            <div class="text-center">
+                <span class="head-main">Ordering Delicious Cupcakes!</span>
             </div>
         </div>
     </div>
     <!-- END HOME -->
 
     <!-- Gallery -->
-    <section>
-        <div id="gallery">
+    <section id="gallery">
+        <div class="container">
             <h1>Gallery</h1>
-            <div>
+            <div class="flex-container">
 
                 <!-- PHOTO CONTAINER 1 -->
-                <div>
-                    <div>
+                <div class="photo-container">
+                    <div class="photo">
                         <img src="thumb/thumbnail_1.jpg" alt="Black and white cupcake">
-                        <div>
+                        <div class="photo-overlay">
                             <h3>Click to enlarge</h3>
-                            <p>
-                            Beautiful, delicious, Black and white cupcake.
-                            </p>
+                            <p>Delicious black and white cupcake.</p>
                         </div>
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER -->
 
                 <!-- PHOTO CONTAINER 2 -->
-                <div>
-                    <div>
+                <div class="photo-container">
+                    <div class="photo">
                         <img src="thumb/thumbnail_2.jpg" alt="Black cupcake">
-                        <div>
+                        <div class="photo-overlay">
                             <h3>Click to enlarge</h3>
-                            <p>
-                            Wonderfully decadent black cupcake
-                            </p>
+                            <p>Decadent black cupcake.</p>
                         </div>
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER -->
 
                 <!-- PHOTO CONTAINER 3 -->
-                <div>
-                    <div>
-                        <img src="thumb/thumbnail_3.jpg" alt="Cookies and cream cupcake">
-                        <div>
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="thumb/thumbnail_3.jpg" alt="Black and white cupcake">
+                        <div class="photo-overlay">
                             <h3>Click to enlarge</h3>
-                            <p>
-                            Creamy cookies and cream.
-                            </p>
+                            <p>Cookies and cream cupcake.</p>
                         </div>
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER -->
 
                 <!-- PHOTO CONTAINER 4 -->
-                <div>
-                    <div>
-                        <img src="thumb/thumbnail_4.jpg" alt="Chocolate sweetheart cupcake">
-                        <div>
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="thumb/thumbnail_4.jpg" alt="Chocolate Valentine cupcake">
+                        <div class="photo-overlay">
                             <h3>Click to enlarge</h3>
-                            <p>
-                            Chocolate sweetheart Valentine.
-                            </p>
+                            <p>Valentine cupcake.</p>
                         </div>
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER -->
 
                 <!-- PHOTO CONTAINER 5 -->
-                <div>
-                    <div>
-                        <img src="thumb/thumbnail_5.jpg" alt="Rainbow pride cupcake">
-                        <div>
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="thumb/thumbnail_5.jpg" alt="Rainbow cupcake">
+                        <div class="photo-overlay">
                             <h3>Click to enlarge</h3>
-                            <p>
-                            Rainbow pride.
-                            </p>
+                            <p>Rainbow pride cupcake.</p>
                         </div>
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER -->
 
                 <!-- PHOTO CONTAINER 6 -->
-                <div>
-                    <div>
+                <div class="photo-container">
+                    <div class="photo">
                         <img src="thumb/thumbnail_6.jpg" alt="Rolo cupcake">
-                        <div>
+                        <div class="photo-overlay">
                             <h3>Click to enlarge</h3>
-                            <p>
-                            Childhood favorite, Rolo.
-                            </p>
+                            <p>Childhood favorite, Rolo cupcake.</p>
                         </div>
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER -->
 
                 <!-- PHOTO CONTAINER 7 -->
-                <div>
-                    <div>
-                        <img src="thumb/thumbnail_7.jpg" alt="Ball sprinkle cupcake">
-                        <div>
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="thumb/thumbnail_7.jpg" alt="Ball sprinkle">
+                        <div class="photo-overlay">
                             <h3>Click to enlarge</h3>
-                            <p>
-                            Ball sprinkle.
-                            </p>
+                            <p>Festive ball sprinkle cupcake..</p>
                         </div>
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER -->
 
                 <!-- PHOTO CONTAINER 8 -->
-                <div>
-                    <div>
-                        <img src="thumb/thumbnail_8.jpg" alt="Sprinkle filled unicorn cupcake">
-                        <div>
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="thumb/thumbnail_8.jpg" alt="Unicorn cupcake">
+                        <div class="photo-overlay">
                             <h3>Click to enlarge</h3>
-                            <p>
-                            Sprinkle filled Unicorns.
-                            </p>
+                            <p>Colorful Unicorn cupcake.</p>
                         </div>
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER -->
 
                 <!-- PHOTO CONTAINER 9 -->
-                <div>
-                    <div>
-                        <img src="thumb/thumbnail_9.jpg" alt="Rose City cupcake">
-                        <div>
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="thumb/thumbnail_9.jpg" alt="Rose city cupcake">
+                        <div class="photo-overlay">
                             <h3>Click to enlarge</h3>
-                            <p>
-                            Delicate Rose City.
-                            </p>
+                            <p>Rose City cupcake.</p>
                         </div>
                     </div>
                 </div>
@@ -167,40 +152,40 @@
     <!-- END GALLERY -->
 
     <!-- RSVP -->
-    <section>
-        <div id="reservations">
-            <div>
-                <h1>Reservations</h1>
-                <div>
+    <section id="contact">
+        <div class="container">
+            <div class="heading-padding">
+                <h1 class="heading-padding">Reservation</h1>
+                <div class="reservation">
                     <h2><span>Upcoming birthday party? Retirement party? Divorce party?</span>
-                    <br />Reserve your delicious cupcakes today!
-                </h2>
-                <p>
-                    Please let us know how big your gathering will be as well as your contact information.
-                </p>
+                        <br />Reserve your delicious cupcakes today!
+                    </h2>
+                    <p class="rsvp-text">
+                        Please let us know how big your gathering will be as well as your contact information.
+                    </p>
+                    <div class="form-rsvp">
+                        <form action="" method="post">
+                            <input class="rsvp" type="text" value="First Name">
+                            <input class="rsvp" type="text" value="Last Name">
+                            <input class="rsvp" type="text" value="Gathering Size">
+                            <input class="rsvp" type="text" value="Date">
+                            <div class="form-spacer">
+                                <label class="terms">Terms and Conditions</label>
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="ORDER!">
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                    <form action="" method="post">
-                        <input class="rsvp" type="text" value="First Name">
-                        <input class="rsvp" type="text" value="Last Name">
-                        <input class="rsvp" type="text" value="Gathering Size">
-                        <input class="rsvp" type="text" value="Date">
-                        <div class="cupcake-ordered">
-                            <label class="terms">Terms and Conditions</label>
-                        </div>
-                        <div>
-                            <input type="submit" value="ORDER!">
-                        </div>
-                    </form>
             </div>
         </div>
     </section>
     <!-- END RSVP -->
 
-    <em>Emphasized text</em>
-
     <!-- FOOTER -->
-    <div>
-       <em><a href="www.deliciouscupcakes.yum" target="new">Deliciouscupcakes.yum</a> &nbsp;|&nbsp; &copy; 2024</em>
+    <div id="footer">
+       <a href="www.deliciouscupcakes.yum" target="new">Deliciouscupcakes.yum</a> &nbsp;|&nbsp; &copy; 2024
     </div>
     <!-- END FOOTER -->
 </body>
