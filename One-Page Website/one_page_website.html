@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Created Furniture</title>
+    <title>Nature Photos</title>
     <link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
+    <script src="./JS/one_page_website.js" defer></script>
 </head>
 
 <body>
@@ -24,70 +25,76 @@
     <div id="home">
         <div>
             <div>
-                <span>Ordering Custom Created Furniture made easy.</span>
+                <span>Beautiful Photos of Nature.</span>
             </div>
         </div>
     </div>
     <!-- END HOME -->
 
-    <!-- Gallery -->
-    <section>
-        <div id="gallery">
-            <h1>Gallery</h1>
-            <div>
-
-                <!-- PHOTO CONTAINER 1 -->
-                <div>
-                    <div class="gallery">
-                        <a target="_blank" href="images/sidebench.jpg">
-                            <img src="images/sidebench.jpg" alt="Side bench with drawers" width="50%" height="50%">
-                        </a>
-                        <div class="info2">Black walnut sidetable.</div>
-                        <p>Customer requested side table bench to hold childrens shoes and extra storage.</p>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER -->
-
-                <!-- PHOTO CONTAINER 2 -->
-                <div>
-                    <div class="gallery">
-                        <a target="_blank" href="images/bbox.jpg">
-                            <img src="images/bbox.jpg" alt="Black walnut button box" width="50%" height="50%">
-                        </a>
-                        <div class="info2">Walnut walnut hitbox style controller.</div>
-                        <p>Customer requested customer controller for their favorite fighting games.</p>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER -->
-
-                <!-- PHOTO CONTAINER 3 -->
-                <div>
-                    <div class="gallery">
-                        <a target="_blank" href="images/dress.jpg">
-                            <img src="images/dress.jpg" alt="Black walnut dresser." width="50%" height="50%">
-                        </a>
-                        <div class="info2">Black walnut dresser.</div>
-                        <p>Customer requested a dresser/changing table for their expecting daughter.</p>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER -->
-
-                <!-- PHOTO CONTAINER 4 -->
-                <div>
-                    <div class="gallery">
-                        <a target="_blank" href="images/wovenbench.jpg">
-                            <img src="images/wovenbench.jpg" alt="White oak bench with danish cord." width="50%" height="50%">
-                        </a>
-                        <div class="info2">India ink stained White Oak entry bench woven with danish cord.</div>
-                        <p>Customer requested an entry bench for their new office.</p>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER -->
-
+    <!-- Images used to open the lightbox -->
+    <div id="gallery"></div>
+        <div class="row">
+            <div class="column">
+            <img src="./images/plant1-small.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+            <img src="./images/plant2-small.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+            <img src="./images/plant3-small.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+            <img src="./images/plant4-small.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
             </div>
         </div>
-    </section>
-    <!-- END GALLERY -->
+    </div>
+    
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="slides">
+            <div class="numbertext">1 / 4</div>
+            <img src="./images/plant1.png" style="width:100%">
+          </div>
+      
+          <div class="slides">
+            <div class="numbertext">2 / 4</div>
+            <img src="./images/plant2.png" style="width:100%">
+          </div>
+      
+          <div class="slides">
+            <div class="numbertext">3 / 4</div>
+            <img src="./images/plant3.png" style="width:100%">
+          </div>
+          
+          <div class="slides">
+            <div class="numbertext">4 / 4</div>
+            <img src="./images/plant4.png" style="width:100%">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>      
+      
+          <div class="column">
+            <img class="details cursor" src="./images/plant1-small.png" style="width:100%" onclick="currentSlide(1)" alt="Cherry Blossoms">
+          </div>
+          <div class="column">
+            <img class="details cursor" src="./images/plant2-small.png" style="width:100%" onclick="currentSlide(2)" alt="Sunflowers">
+          </div>
+          <div class="column">
+            <img class="details cursor" src="./images/plant3-small.png" style="width:100%" onclick="currentSlide(3)" alt="Succulents">
+          </div>
+          <div class="column">
+            <img class="details cursor" src="./images/plant4-small.png" style="width:100%" onclick="currentSlide(4)" alt="Beautiful House Plant">
+          </div>
+        </div>
+    </div>
 
     <div>
         <div id="videos">
@@ -104,18 +111,19 @@
     <section id="contact">
         <div class="container">
             <div class="heading-padding">
-                <h1 class="heading-padding">Orders</h1>
+                <h1>Orders</h1>
                 <div class="orders">
-                    <h2><span>Need to furnish a house? Purchasing a gift? Like charcuterie?</span></h2>
+                    <h2><span>Would you like to purchase beautiful nature photos?!</span></h2>
                     <p>
-                        Please provide us with details for custom furniture you would like to purchase!
+                        Please provide us with the climate of your preference and how much of the picture you want out of focus!
                     </p>
                     <div>
                         <form action="" method="post">
-                            <input class="rsvp" type="text" value="First Name">
-                            <input class="rsvp" type="text" value="Last Name">
-                            <input class="rsvp" type="text" value="Phone Number">
-                            <input class="rsvp" type="text" value="Date">                                <div class="form-spacer">
+                            <input class="rsvp" type="text" placeholder="First Name">
+                            <input class="rsvp" type="text" placeholder="Last Name">
+                            <input class="rsvp" type="text" placeholder="Climate preference">
+                            <input class="rsvp" type="text" placeholder="focus percentage">
+                            <div class="form-spacer">
                                 <label class="terms">Terms and Conditions</label>
                             </div>
                             <div class="submit">
@@ -134,9 +142,9 @@
 <footer>
     <!-- FOOTER -->
     
-        <div>
-        <a href="www.Customfurniture.wood" target="_blank">Customfurniture.wood</a> &nbsp;|&nbsp; &copy; 2024
-        </div>
+    <div>
+    <a href="www.beautifulnaturephotos.com" target="_blank">BeautifulNaturePhotos.com</a> &nbsp;|&nbsp; &copy; 2024
+    </div>
 
     <!-- END FOOTER -->
 </footer>
